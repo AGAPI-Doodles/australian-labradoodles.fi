@@ -10,7 +10,7 @@ layout: default
   </div>
   {%- if page.image -%}
     <div class="col-4 offset-1">
-      <img class="rounded float-end" src="{{ page.image | relative_url }}" style="width: 100%;">
+      <img class="rounded float-end" src="{{ page.image | absolute_url }}" style="width: 100%;">
     </div>
   {%- endif -%}
 </div>
