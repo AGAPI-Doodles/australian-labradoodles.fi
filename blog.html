@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<h1 class="display-4 mb-4">{{ page.title | escape }}</h1>
+
+{%- if site.posts.size > 0 -%}
+  {%- for post in site.posts -%}
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col">{{ post.title | escape }}</div>
+        <div class="col text-end">{{ post.date | date_to_string: "ordinal", "US" }}</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">{{ post.content }}</blockquote>
+    </div>
+  </div>
+  {%- endfor -%}
+{%- endif -%}

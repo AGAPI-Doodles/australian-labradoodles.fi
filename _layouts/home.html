@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="row align-items-center mt-5">
+  <div class="col-5">
+    <h1 class="display-4">{{ page.topTitle }}</h1>
+    <div class="lead">{{ page.topText }}</div>
+    <a href="/about/" class="btn btn-primary mt-3">About</a>
+  </div>
+  <div class="col-5 offset-2">
+    <img class="rounded float-end" src="{{ page.topImage | relative_url }}" style="width: 100%" />
+  </div>
+</div>
+
+<h2 class="display-5 vertical-gap--large">Everyday pictures</h2>
+
+<div class="row align-items-center mt-2">
+  {% for image in page.galleryImages %} {% capture fullpath %}{{ page.galleryDir }}{{ image.imagePath }}{% endcapture %}
+  <div class="col-6 col-md-4 p-3">
+    <img class="rounded" src="{{ fullpath }}" style="width: 100%" alt="" />
+  </div>
+  {% endfor %}
+</div>
