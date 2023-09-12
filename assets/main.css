@@ -2,6 +2,14 @@ body {
   background-color: #f2f6ff;
 }
 
-.vertical-gap--large {
-  margin-top: 150px;
+@media (min-width: 768px) {
+  .vertical-gap--large {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .vertical-gap--large {
+    margin-top: 50px;
+  }
 }

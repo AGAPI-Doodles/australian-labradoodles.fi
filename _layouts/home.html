@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<div class="row align-items-center mt-5">
-  <div class="col-5">
+<div class="row align-items-center mt-md-5">
+  <div class="col-md-5 offset-md-2">
+    <img class="rounded float-end" src="{{ page.topImage | absolute_url }}" style="width: 100%" />
+  </div>
+  <div class="col-md-5 order-md-first mt-3 mt-md-0">
     <h1 class="display-4">{{ page.topTitle }}</h1>
     <div class="lead">{{ page.topText }}</div>
     <a href="https://agapi-doodles.github.io/australian-labradoodles.fi/about/" class="btn btn-primary mt-3">About</a>
-  </div>
-  <div class="col-5 offset-2">
-    <img class="rounded float-end" src="{{ page.topImage | absolute_url }}" style="width: 100%" />
   </div>
 </div>
 
