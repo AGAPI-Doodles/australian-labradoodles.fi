@@ -27,8 +27,8 @@ Link: [google](http://google.com)
 ```markdown
 [google](http://google.com)
 
-<!-- option + 8 = [ -->
-<!-- option + 9 = ] -->
+option + 8 = [
+option + 9 = ]
 ```
 
 Punktopstilling:
