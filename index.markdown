@@ -16,4 +16,5 @@ galleryImages:
   - imagePath: IMG_20200914_144825.jpg
   - imagePath: IMG_20200914_145156.jpg
   - imagePath: IMG_20210123_143648.jpg
+  - imagePath: IMG_0697.dng
 ---
